@@ -71,21 +71,13 @@ También puedes ejecutar la clase `Main` desde tu IDE.
 
 ## Capturas
 
-<p align="center">
-  <img src="./src/captura1.png" alt="Captura 1" width="900">
-</p>
+![Captura 1](src/captura1.png)
 
-<p align="center">
-  <img src="./src/captura2.png" alt="Captura 2" width="900">
-</p>
+![Captura 2](src/captura2.png)
 
-<p align="center">
-  <img src="./src/captura3.png" alt="Captura 3" width="900">
-</p>
+![Captura 3](src/captura3.png)
 
-<p align="center">
-  <img src="./src/captura4.png" alt="Captura 4" width="900">
-</p>
+![Captura 4](src/captura4.png)
 
 ## Video de sustentación
 
