@@ -31,6 +31,7 @@ Pizza-Track/
 │   ├── captura1.png
 │   ├── captura2.png
 │   ├── captura3.png
+│   ├── captura4.png
 │   ├── Main.java
 │   ├── GestionPedidos.java
 │   ├── Pila.java
@@ -80,6 +81,10 @@ También puedes ejecutar la clase `Main` desde tu IDE.
 
 <p align="center">
   <img src="./src/captura3.png" alt="Captura 3" width="900">
+</p>
+
+<p align="center">
+  <img src="./src/captura4.png" alt="Captura 4" width="900">
 </p>
 
 ## Video de sustentación
