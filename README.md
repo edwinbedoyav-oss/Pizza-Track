@@ -28,15 +28,14 @@ Aplicar el concepto de pila en un caso real de negocio, usando nodos enlazados p
 ```text
 Pizza-Track/
 ├── src/
+│   ├── captura1.png
+│   ├── captura2.png
+│   ├── captura3.png
 │   ├── Main.java
 │   ├── GestionPedidos.java
 │   ├── Pila.java
 │   ├── Nodo.java
 │   └── Pizza.java
-├── capturas12/
-│   ├── captura1.png
-│   ├── captura2.png
-│   └── captura3.png
 ├── bin/
 ├── README.md
 └── .gitignore
@@ -72,15 +71,15 @@ También puedes ejecutar la clase `Main` desde tu IDE.
 ## Capturas
 
 <p align="center">
-  <img src="./capturas12/captura1.png" alt="Captura 1" width="900">
+  <img src="./src/captura1.png" alt="Captura 1" width="900">
 </p>
 
 <p align="center">
-  <img src="./capturas12/captura2.png" alt="Captura 2" width="900">
+  <img src="./src/captura2.png" alt="Captura 2" width="900">
 </p>
 
 <p align="center">
-  <img src="./capturas12/captura3.png" alt="Captura 3" width="900">
+  <img src="./src/captura3.png" alt="Captura 3" width="900">
 </p>
 
 ## Video de sustentación
