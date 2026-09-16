@@ -1,14 +1,23 @@
 # Pizza-Track
 
-Simulador de gestión de pedidos para una pizzería, desarrollado en Java para la actividad EA2 (Manipulación de Arreglos y Listas). Permite registrar pedidos y deshacer o rehacer esa acción mediante dos pilas construidas manualmente con listas ligadas, sin usar `java.util.Stack`.
+Proyecto desarrollado en Java para gestionar pedidos de una pizzería con el uso de pilas y estructuras de datos. La aplicación permite registrar pizzas, deshacer la última acción y rehacerla cuando sea necesario.
+
+## Descripción
+
+Pizza-Track simula la gestión de pedidos mediante dos pilas:
+
+- La pila principal guarda los pedidos actuales.
+- La pila secundaria guarda los pedidos deshechos para poder volver a restaurarlos.
+
+Esto permite implementar la funcionalidad de Undo/Redo de manera sencilla y funcional.
 
 ## Objetivo
 
-Aplicar el concepto de pila (estructura LIFO) a un caso de gestión de pedidos, implementando desde cero la lógica de inserción y extracción sobre nodos enlazados, y combinándola con el uso de un arreglo de tamaño fijo para representar los ingredientes de cada pizza.
+Aplicar el concepto de pila (LIFO) a un caso real de negocio, usando nodos enlazados para crear la estructura sin depender de `java.util.Stack`.
 
 ## Estructura del proyecto
 
-```
+```text
 Pizza-Track/
 ├── src/
 │   ├── Pizza.java
@@ -16,44 +25,72 @@ Pizza-Track/
 │   ├── Pila.java
 │   ├── GestionPedidos.java
 │   └── Main.java
-└── README.md
+├── capturas12/
+│   ├── captura1.png
+│   ├── captura2.png
+│   └── captura3.png
+├── README.md
+└── bin/
 ```
 
-- **Pizza**: representa un pedido; guarda el nombre y un arreglo de 3 ingredientes.
-- **Nodo**: unidad básica de la lista ligada; guarda una pizza y una referencia al siguiente nodo.
-- **Pila**: implementación manual de una pila sobre nodos enlazados (`push`, `pop`, `peek`, `isEmpty`).
-- **GestionPedidos**: coordina la pila principal y la secundaria para manejar el Undo/Redo.
-- **Main**: menú de consola que conecta todo lo anterior con el usuario.
+### Clases principales
 
-## ¿Qué es una pila y cómo se usa aquí?
+- `Pizza`: representa una pizza con nombre e ingredientes.
+- `Nodo`: nodo de la lista enlazada utilizada por la pila.
+- `Pila`: implementación manual de la estructura LIFO.
+- `GestionPedidos`: administra los pedidos activos y los deshechos.
+- `Main`: menú principal para interactuar con el usuario.
 
-Una pila es una estructura de datos que solo permite agregar y quitar elementos por un extremo, llamado tope, bajo el orden LIFO: el último elemento en entrar es el primero en salir. Aquí se usan dos pilas independientes para lograr el Undo/Redo:
+## ¿Cómo funciona?
 
-- La **pila principal** guarda los pedidos activos, en el orden en que fueron registrados.
-- La **pila secundaria** guarda temporalmente los pedidos que se han deshecho, para poder recuperarlos.
+La lógica es muy simple:
 
-Cuando el usuario registra una pizza, esta se apila (`push`) en la pila principal. Al elegir Deshacer, se retira (`pop`) el pedido que está en el tope de la pila principal y se apila en la secundaria; el pedido no se borra, simplemente cambia de pila. Al elegir Rehacer ocurre el proceso inverso: se retira el tope de la secundaria y se vuelve a apilar en la principal. Por eso el ciclo Registro → Deshacer → Rehacer siempre devuelve el pedido a su estado anterior.
+1. El usuario registra una pizza.
+2. La pizza entra a la pila principal.
+3. Si se elige deshacer, la última pizza sale de la principal y pasa a la secundaria.
+4. Si se elige rehacer, la pizza regresa a la principal.
+
+Este comportamiento simula la lógica de una pila con historial de acciones.
 
 ## Requisitos
 
-- JDK (Eclipse Temurin)
-- Visual Studio Code con la extensión de Java, o cualquier IDE compatible
+- Java JDK instalado.
+- Visual Studio Code con soporte para Java o cualquier IDE compatible.
 
 ## Cómo ejecutar
 
-1. Clonar este repositorio.
-2. Abrir la carpeta del proyecto en VS Code.
-3. Ejecutar la clase `Main.java` (botón *Run* del editor, o `java Main` desde la carpeta compilada).
-4. Usar el menú para registrar pizzas, deshacer, rehacer o consultar el pedido actual.
+1. Abre la carpeta del proyecto en tu IDE o terminal.
+2. Compila los archivos Java.
+3. Ejecuta la clase `Main`.
+4. Usa el menú para registrar, deshacer, rehacer o consultar el pedido actual.
+
+Ejemplo de ejecución:
+
+```bash
+javac -d bin src\*.java
+java -cp bin Main
+```
 
 ## Capturas de ejecución
 
-*(Agregar aquí las capturas de consola mostrando el ciclo Registro → Deshacer → Rehacer)*
+A continuación se muestran algunas capturas del funcionamiento del programa:
+
+<p align="center">
+  <img src="capturas12/captura1.png" alt="Captura 1" width="900" />
+</p>
+
+<p align="center">
+  <img src="capturas12/captura2.png" alt="Captura 2" width="900" />
+</p>
+
+<p align="center">
+  <img src="capturas12/captura3.png" alt="Captura 3" width="900" />
+</p>
 
 ## Video de sustentación
 
-*(Agregar aquí el enlace al video individual — YouTube, Drive o GitHub)*
+*(Agregar aquí el enlace del video individual o de Google Drive/YouTube.)*
 
 ## Autores
 
-*(Agregar los nombres de los integrantes del equipo)*
+*(Agregar los nombres de los integrantes del equipo.)*
