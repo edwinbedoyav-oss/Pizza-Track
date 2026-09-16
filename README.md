@@ -69,20 +69,18 @@ java -cp bin Main
 
 También puedes ejecutar la clase `Main` desde tu IDE.
 
-## Capturas de ejecución
-
-A continuación se muestran algunas capturas del funcionamiento del programa:
+## Capturas
 
 <p align="center">
-  <img src="capturas12/captura1.png" alt="Captura 1" width="900" />
+  <img src="./capturas12/captura1.png" alt="Captura 1" width="900">
 </p>
 
 <p align="center">
-  <img src="capturas12/captura2.png" alt="Captura 2" width="900" />
+  <img src="./capturas12/captura2.png" alt="Captura 2" width="900">
 </p>
 
 <p align="center">
-  <img src="capturas12/captura3.png" alt="Captura 3" width="900" />
+  <img src="./capturas12/captura3.png" alt="Captura 3" width="900">
 </p>
 
 ## Video de sustentación
