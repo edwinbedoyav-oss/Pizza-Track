@@ -4,7 +4,7 @@ Proyecto desarrollado en Java para gestionar pedidos de una pizzería mediante e
 
 ## Descripción
 
-Pizza-Track simula la gestión de pedidos de una pizzería usando dos pilas:
+Pizza-Track es una simulacion la gestión de pedidos de una pizzería usando dos pilas:
 
 - La pila principal guarda los pedidos actuales.
 - La pila secundaria guarda los pedidos deshechos para poder recuperarlos.
@@ -13,7 +13,7 @@ Esto permite implementar la funcionalidad de Undo/Redo de una forma sencilla y c
 
 ## Objetivo
 
-Aplicar el concepto de pila en un caso real de negocio, usando nodos enlazados para construir la estructura sin depender de `java.util.Stack`.
+aqui hay que Aplicar el concepto de pila en un caso real de negocio, usando nodos enlazados para construir la estructura sin depender de `java.util.Stack`.
 
 ## Características
 
@@ -58,16 +58,6 @@ Esto permite llevar un historial de pedidos sin perder la información, etc.
 - Java JDK instalado.
 - Visual Studio Code o cualquier IDE compatible con Java.
 
-## Cómo ejecutar
-
-Abre una terminal en la raíz del proyecto y ejecuta estos comandos:
-
-```bash
-javac -d bin src\*.java
-java -cp bin Main
-```
-
-También puedes ejecutar la clase `Main` desde tu IDE.
 
 ## Capturas
 
@@ -81,11 +71,13 @@ También puedes ejecutar la clase `Main` desde tu IDE.
 
 ## Video de sustentación
 
-*(Agregar aquí el enlace del video de sustentación o el enlace de YouTube/Drive.)*
+*(https://youtu.be/kFpRnwLJxNg
+)*
 
 ## Autores
 
-*(Agregar los nombres de los integrantes del equipo.)*
+edwin bedoya valencia
+
 
 ## Observación
 
